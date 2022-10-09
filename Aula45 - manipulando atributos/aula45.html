@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula45</title>
+    <style>
+        #carro{
+            width: 500px;
+            height: 500px;
+        }
+        .c1{
+            background-image: url("imgs/bugdroid.png");
+        }
+        .c2{
+            background-image: url("imgs/dan-droids-pq.png");
+        }
+        .c3{
+            background-image: url("imgs/dan-droids.png");
+        }
+    </style>
+</head>
+<body>
+    <button onclick="trocando(1)">Imagem1</button>
+    <button onclick="trocando(2)">Imagem2</button>
+    <button onclick="trocando(3)">Imagem3</button>
+    <button onclick="removerCarro()">Remover classe</button>
+    <button onclick="verifica()">Verifica</button>
+    <div id="carro"></div>
+
+
+
+    <script>
+
+       
+       function trocando(c){
+            var obj = document.getElementById("carro");
+            if (c==1){
+                obj.setAttribute("class","c1");
+            } else if(c==2){
+                obj.setAttribute("class","c2");
+            } else if(c==3){
+                obj.setAttribute("class","c3");
+            }
+        }
+
+        function removerCarro(){
+            var obj = document.getElementById('carro');
+            obj.removeAttribute('class');
+        }
+
+        function verifica(){
+              var obj = document.getElementById('carro');
+             if (obj.hasAttribute('class')){
+                alert("tem classe");
+              } else{
+                alert("Não tem classe");
+              }
+        }
+
+
+    </script>
+</body>
+</html>

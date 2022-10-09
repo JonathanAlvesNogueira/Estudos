@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula35</title>
+    <style>
+        #div{
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+            background-color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="div"></div>
+    <br>
+    <button id="btn1">Iniciar</button>
+    <button id="stop">Parar</button>
+
+
+
+    <script>
+
+
+        var tmp;
+
+        function mudaCor(){
+            var obj = document.getElementById("div");
+            var r = Math.floor(Math.random()*255);
+            var g = Math.floor(Math.random()*255);
+            var b = Math.floor(Math.random()*255);
+            obj.style.backgroundColor="rgb("+ r +", "+g+", "+b+")"
+        }
+
+        function iniciar(){
+           tmp = setInterval(mudaCor, 1000);
+        }
+
+        function pare(){
+            clearInterval(tmp);
+        }
+        function addEventos(){
+            document.getElementById("btn1").addEventListener("click", iniciar);
+            document.getElementById("stop").addEventListener("click", pare);
+        }
+
+        window.addEventListener("load", addEventos);
+
+
+/*
+
+
+       // addEventListener('load', mudaCor);
+      // var tmp = setTimeout(mudaCor, 500)
+       var tmp = setInterval(mudaCor, 500)
+*/
+    </script>
+</body>
+</html>

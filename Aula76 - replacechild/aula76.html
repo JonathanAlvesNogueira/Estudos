@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula76</title>
+</head>
+<body>
+    
+    <div id="cfb">
+        <p>Java</p>
+        <p>Javascript</p>
+        <p>Python</p>
+        <p>Azure</p>
+    </div>
+
+    <script>
+
+        function inicia(){
+            var novoH1 = document.createElement("h1");  // Cria um elemento HTML
+            var lista = document.getElementById('cfb'); //Pega a lista
+            var text = document.createTextNode('cfb') // Cria um texto 
+            var antigop = lista.childNodes[2];   // pega um item da lista
+            novoH1.appendChild(text);                    // Coloca um texto no H1
+            lista.replaceChild(novoH1, antigop)   // Troca o item da lista pelo novoH1
+            
+        }
+
+        window.addEventListener("load", inicia)
+    </script>
+</body>
+</html>

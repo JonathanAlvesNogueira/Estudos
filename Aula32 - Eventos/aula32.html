@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos</title>
+    <style>
+#div{
+    width: 200px;
+    height:200px;
+    border: 1px solid black;
+}
+</style>
+</head>
+
+<body>
+
+
+    <div id="div" onmouseover="alert(this, 'blue')" onmouseout="alert(this, 'white')">Espaço</div>
+    <button onmouseover="mudaPos(this)">Olá</button>
+
+
+    <script>
+        function alert(obj,cor){
+            obj.style.backgroundColor=cor
+
+        }
+
+        function mudaPos(obj){
+            obj.style.position="absolute";
+            obj.style.left= Math.random()*500 +"px";
+            obj.style.top= Math.random()*500 +"px";
+        }
+
+        
+    
+        
+    
+
+    </script>
+</body>
+</html>

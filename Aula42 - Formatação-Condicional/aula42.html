@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula42</title>
+    <style>
+        table{
+            border-collapse: collapse;
+        }
+        table,td,tr,th{
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="titulo"></div>
+    <table id="tbnotas">
+            <tr>
+                <th>Alunos</th>
+                <th>Nota 1</th>
+                <th>Nota 2</th>
+                <th>Resultado</th>
+            </tr>
+            <tr>
+                <td>a11</td> <td>35</td> <td>48</td> <td id="n1"></td>
+            </tr>
+            <tr>
+                <td>A12</td> <td>20</td> <td>15</td> <td id="n2"></td>
+            </tr>
+            <tr>
+                <td>a13</td> <td>10</td>  <td>70</td> <td id="n3"></td>
+            </tr>
+    </table>
+
+
+    <script>
+        var tabela = document.getElementById("tbnotas");
+        var nota;
+
+        for(var i = 1; i < tabela.rows.length; i++){
+            nota= parseFloat(tabela.rows[i].cells[1].innerHTML) + parseFloat(tabela.rows[i].cells[2].innerHTML);
+            tabela.rows[i].cells[3].innerHTML=nota;
+        }
+
+
+
+        var n =[];
+        n[0]= document.getElementById('n1');
+        n[1]= document.getElementById('n2');
+        n[2]= document.getElementById('n3');
+        n[3]= document.getElementById('n4');
+
+        
+
+    </script>
+</body>
+</html>
