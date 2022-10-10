@@ -1,0 +1,118 @@
+Container - deixa a div container responsiva automaticamente.
+container-sm = Adiciona um container small 
+container-md = adiciona um  container md
+container-lg = adiciona um container large
+container-xl - adiciona um container largo
+container-xxl - adiciona um container extra largo
+bg - muda o background do item
+text - permite mudar a cor do texto
+pt - adiciona o padding top ao item, exemplo pt-5
+p = adiciona um padding no item
+border - Adiciona uma borda no item
+row - Indica que é uma linha
+col = Adiciona os itens em colunas
+text-center = deixa o texto alinhado
+m = Margem que pode ser adicionada ao elemento
+my = margem da linha Y
+small = diminui o item selecionado
+abbr = coloca que é uma abreviação
+text-uppercase = deixa o item todo em maiusculo
+text-left - deixa o texto lado esquerdo
+text-break = quebra o texto para nao dar rolagem na direção Y da pagina
+text-end = alinha para direita
+text-capitalize = primeira letra de cada palavra fica maiuscula
+border-dark = coloca uma borda preta
+text-muted = deixa a cor cinza
+text-primary = usado para textos importantes
+text-dark = deixa o texto em preto mais jogado para o cinza
+text-info = deixa o texto ciano
+text-secondary = deixa o texto cinza
+text-sucess = aplica um preto modificado. Bem forte
+text-white-50 = Podemos tambem alterar a opacidade como ao lado esquerdo(È UM EXEMPLO)
+table-striped = mescla as cores da tabale
+table-hover = permite a passagem de mouse na tabela
+table-bordered = coloca bordas na tabela
+table-borderless = tira toda as bordas da tabela
+w = width
+rounded = deixa as bordas da imagem redondas]
+rounded-circle = deixa as bordas mais redondas
+d = display
+d-block = display block
+mx = margin x
+mx-auto = centraliza o item no meio da linha X
+img-thumbnail = adiciona uma borda na imagem
+img-fluid = deixa a imgame com width100% e height em auto
+btn-close = cria um botão de fechar.
+data-bs-dismiss="alert" = adiciona a função de fechar ao btn-close ou outro botão de fechar
+alert-success = deixa o alerta mais azulzinho e preenchido
+invisible = oculta
+show = mostra
+alert-dismissible = pesquisar...
+btn-link = botão de link
+btn = forma o botao do bootstrap
+btn-dark/light/info/danger/warning/primary/secondary = podem ser usados como formatação
+btn-outline-primary = muda a cor do item e permite que ele mude quando passar o mouse em cima também
+btn-outline- permite mudar a cor quando passar o mouse e as bordas
+btn-lg = deixa o botão largo
+btn-sm = deix o botão small
+btn-block = trava e deixa acionado o botão
+disabled = habilitado no próprio html. Desabilita o botão
+btn-group = indica que é um grupo de botões
+btn-group-vertical = alinha os botões um embaixo do outro
+dropdown-toggle = informa que é o elemento principal
+dropdown-menu = informa que vai ser feito um menu nessa div
+dropdown-item = informa que é um item do menu
+data-bs-toggle="dropdown" = comando usado em conjunto com o dropdown-toogle para abrir o botão (Esse comando é javascript)
+float-start = coloca a imagem no lado esquerdo
+float-end = coloca a imagem no lado direito
+mx-auto = deixa o item no centro, No entanto as vezes precisa ser usado em display block
+align-items-start = deixa o item no inicio da linha
+align-items-center = deixa o item no meio da linha
+align-items-end = deixa o item no final da linha
+align-self-start = usado no elemento dentro da div para alinha o item no inicio da linha
+align-self-center = usado no elemento dentro da div para alinha o item no meio da linha
+align-self-end = Usado no elemento dentro da div para alinhar o item ao final da linha
+justify-content-start = usado para alinhar a div-container no inicio
+justify-content-center = usado para alinhar a div-container no meio
+justify-content-end = usado para alinhar a div-container no fim
+order = modifica o lugar da coluna
+badge-dark/danger/white/primary... = usado para destacar alguma área do texto
+progress = cria uma barra de progresso
+progress-bar = permite colocar o valor de progresso da barra assim como o escrito. Com javascript podemos melhorar. Basta acessar a aula16.html para ver um exemplo
+spinner-border = carrega um spinner de carregamento web
+spinner-border text-danger = muda a cor do spinner
+spinner-grow = faz um spinner de carregamento de pisca pisca
+pagination = comando usado na UL para indicar uma paginação
+page-item = comando usado no LI par indicar que é um item da paginação
+page-link = comando usado no A do LI para indicar transferencia e mudança de formatação da pagina
+list-group = VOLTAR PARA VER NA AULA 19
+card = cria o card 
+card-header = cria e adiciona o cabeçalho do card
+card-body = cria e adiciona o corpo do card
+card-img-overlay = coloca a parte do card acima de tudo
+card-text = cria e adiciona o texto do card
+card-footer = cria o rodpé do card
+<hr class="dropdown-divider"> = Cria uma linha de separação no dropdown
+dropup = abre o menu para cima
+dropend = abre o menu a direita
+dropstart = abre o menu para a esquerda
+data-bs-toggle="collapse" = cria um botão com a estrutura collapse (Aula22)
+data-bs-target="#cfbcursos" = serve para indicar quaal div está associado com o botão (Aula22)
+
+AULA 23(NAV)
+nav = comando usado na UL para indicar que é um nav
+nav-item = comando utilizado no LI para indicar um item de navegação
+nav-pills = utilizado na UL para modificar a barra de navegação e utilizar uma seleçãao mais colorizada
+nav-link = comando usado no A para indicar um item de link
+nav-tabs = Comando utilizado no UL para indicar que é uma nav em formato de tabela
+justify-content-center = usado no UL para passar o nav para o meio
+justify-content-end = comando usado no UL para passar o nav para o final
+
+VOLTAR E VER A AULA 25
+
+(AULA 26)
+
+navbar = comando utilizado na UL para indicar que é uma navbar e vai ser uma barra de navegação
+navbar-expand = deixa os itens na horizontal
+navbar-brand = pesquisar
+navbar-dark = prepara a navbar para as cors bootstrap
