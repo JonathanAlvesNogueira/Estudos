@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula75</title>
+</head>
+<body>
+    
+    <input type="text" id="fnovo">
+    <button id="btnadd">Adicionar</button>
+    <button id="btn-contar">Contar</button>
+    <ul id="listaElementos"></ul>
+
+
+    <script>
+
+        function inicia(){
+            document.getElementById('btn-contar').addEventListener('click', function(){
+                var lista = document.getElementById('listaElementos');
+                var num = lista.childNodes.length;
+                window.alert(num);
+            })
+        }
+
+        document.getElementById('btnadd').addEventListener('click', function(){
+            var lista = document.getElementById('listaElementos');
+            var texto = document.getElementById('fnovo');
+            var li = document.createElement("li");
+            li.textContent=texto.value
+            //lista.appendChild(li);
+            lista.insertBefore(li, lista.childNodes[0])
+            texto.value="";
+            texto.focus();
+        })
+
+        window.addEventListener("load", inicia)
+
+    </script>
+</body>
+</html>

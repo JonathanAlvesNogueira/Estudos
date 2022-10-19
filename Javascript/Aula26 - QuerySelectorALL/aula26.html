@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula26</title>
+</head>
+<style>
+    .titulo{
+        color: blue;
+        font-size: 20px;
+        text-decoration: underline;
+    }
+    div{
+        border: 1px solid black;
+        padding: 20px;
+        display: inline-block;
+    }
+    a{
+        display: block;
+    }
+
+
+
+</style>
+<body>
+    <h1 class="titulo">Query selector</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut at sapiente sequi porro obcaecati sint repellat eligendi blanditiis pariatur incidunt tenetur enim placeat, maxime iste voluptas laudantium totam iusto ratione!</p>
+    <h2 class="titulo">Titulo</h2>
+    <p>alex</p>
+    <p>alex</p>
+    <div>
+        <p>Esse texto está na div</p>
+        <p>Esse também</p>
+    </div>
+    <a href="">Canal</a>
+    <a href="">Site</a>
+
+<script>
+    ps= document.querySelectorAll("p");
+    document.write('<hr>')
+    document.write(ps[0].innerHTML);
+    ps[0].style.color="blue"
+    ps[2].innerHTML="ola mundo"
+    ps[2].style.color="blue"
+    for (i=0; i < ps.length; i++){
+        document.write("Ola mundo");
+    }
+
+    px = document.querySelectorAll('div > p');
+       px[0].innerHTML="Olá mundo"
+    
+
+
+
+
+
+</script>
+
+
+
+
+</body>
+</html>

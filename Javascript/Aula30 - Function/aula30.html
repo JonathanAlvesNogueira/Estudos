@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function aula30</title>
+</head>
+<body>
+    <p id="resultado">Aqui vai aparecer o resultado</p>
+    <script>
+       
+       
+       
+       
+       /*
+        function escreve(){
+            document.write("olá mundo" + "<br>");
+        }
+        escreve()
+        */
+
+        /*
+        function soma(n1,n2){
+            return n1 + n2;
+        }
+        document.write(soma());
+*/
+
+        var numeros = [5,5,5,5,5,5,5,5]
+        
+
+        function numerosmedia(nums){
+            var tam = nums.length
+            var soma = 0;
+            for (var i=0; i < tam; i++){  
+                soma += nums[i];
+            }
+            return Math.round(soma/tam);
+}
+
+    document.write(numerosmedia(numeros))
+
+
+
+    </script>
+</body>
+</html>

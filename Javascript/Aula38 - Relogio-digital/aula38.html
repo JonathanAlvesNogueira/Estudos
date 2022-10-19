@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula38</title>
+</head>
+<style>
+    #rel{
+        background-color: black;
+        text-align: center;
+        font-weight: bold;
+        color: white;
+        width: 230px;
+        font-size: 30px;
+    }
+
+
+</style>
+<body>
+    <input type="text"  id="rel">
+
+
+
+
+    <script>
+        function relogio(){
+            var data = new Date();
+            var hora = data.getHours();
+            var minutos = data.getMinutes();
+            var segundos = data.getSeconds();
+
+            if (horas < 10){
+                horas = "0" + horas;
+            }
+            if (minutos < 10){
+                minutos = "0" + minutos;
+            }
+            if (segundos < 10){
+                segundos = "0" + segundos;
+            }
+            var horas = hora  + " : " + minutos + " : " + segundos;
+            document.getElementById("rel").value=horas;
+        }
+        var tempo = setInterval(relogio, 1000);
+
+    </script>
+</body>
+</html>

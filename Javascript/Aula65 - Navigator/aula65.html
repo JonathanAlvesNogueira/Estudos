@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula65</title>
+</head>
+<style>
+    #painel{
+        border: 1px solid black;
+        padding: 10px;
+        width: 400px;
+        height: 500px;
+        border-radius: 10px;
+    }
+
+
+</style>
+<body>
+    
+    <div id="painel"></div>
+
+
+
+    <script>
+
+        var painel;
+
+        function inicia(){
+            painel = document.getElementById('painel');
+            painel.innerHTML="Nome do Browser: " + navigator.appName
+        }
+
+
+        window.addEventListener('load', inicia);
+    </script>
+</body>
+</html>

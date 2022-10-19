@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula64</title>
+    <style>
+        #painel{
+            border: 1px solid black;
+            width: 2000px;
+            height: 2000px;
+            padding: 15px;
+            background-color: #bbb;
+            border-radius: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <button id="click">Tamanho</button>
+    <button id="btnpos">Rolar</button>
+    <div id="painel"></div>
+  
+
+
+
+
+    <script>
+  
+  var l,h;
+       
+       function info(){
+           l = window.innerWidth;
+           h = window.innerHeight
+           px= window.screenX;
+           py = window.screenY;
+           painel.innerHTML = h + " " + l + " " + px + " " + py;
+       }
+       function inicia(){
+           document.getElementById('click').addEventListener('click', info)
+           document.getElementById('btnpos').addEventListener('click', rolar)
+
+           painel = document.getElementById('painel');
+       }
+       function rolar(){
+            window.scrollBy(1000,1000);
+       }
+
+
+
+
+
+
+       window.addEventListener('load', inicia);
+
+
+
+    </script>
+</body>
+</html>

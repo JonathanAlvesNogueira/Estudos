@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula43</title>
+    <style>
+        #divslider{
+            width: 1000px;
+            height: 300px;
+            border: 1px solid black;
+
+        }
+    </style>
+</head>
+<body>
+    <div id="divslider"></div>
+
+<script>
+    var imgs = [];
+   
+    function precarregmento(){
+        var s = 1;
+        for(i=0;i<5; i++){
+            imgs[0] = new Image();
+            imgs[0].src="";
+            s++
+
+
+    }
+}
+    function carregarimagem(){
+      slider.style.backgroundImage="url('imgs[img].')"
+    }
+    function inicia(){
+        var slider = document.getElementById('divslider');
+    }
+
+    window.addEventListener("load", inicia)
+</script>
+</body>
+</html>

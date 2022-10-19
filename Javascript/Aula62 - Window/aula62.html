@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Window</title>
+</head>
+<body>
+    
+
+    <button onclick="abrejanela()">Clique aqui</button>
+    <iframe name="cfb" src="" frameborder="0"></iframe>
+    <button onclick="fecha()">fechar janela</button>
+
+
+    <script>
+        function abrejanela(){
+            var a = window.open('tmp.html', "cfb");
+        }
+        function fecha(){
+             window.close();
+        }
+      
+    </script>
+</body>
+</html>

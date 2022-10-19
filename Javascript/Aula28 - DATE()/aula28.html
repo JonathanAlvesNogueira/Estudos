@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula28</title>
+</head>
+<body>
+
+
+
+    <script>
+        var data = new Date();
+        var novaData = new date(); // Voltar no video para rever como configurar uma nova data
+
+
+        var diaSem = data.getDay();
+        var mes = data.getMonth();
+        var dia = data.getDate();
+        var ano = data.getFullYear();
+
+
+        var horas = data.getHours();
+        var minutos = data.getMinutes();
+        var segundos = data.getSeconds();
+
+        var meses = ["Janeiro", "Fevereiro" , "Março" , "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro" , "Novembro", "Dezembro"]
+        var semana = ["Domingo", "Segunda", "Terça", "Quarta", "Quinta","Sexta","Sábado"]
+
+        document.write(semana[diaSem] + " de " + meses[mes] + " 2022 <br>")
+
+
+        document.write(horas + " : " + minutos + ": " + segundos)
+
+
+
+    </script>
+</body>
+</html>

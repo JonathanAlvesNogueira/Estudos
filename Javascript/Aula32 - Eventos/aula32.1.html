@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="ola()">
+    
+
+
+<script>
+    function ola(){
+        var text;
+        var data = new Date();
+        var hora = data.getHours();
+        if (hora < 12){
+            text = "Bom dia";
+        } else if (hora < 18){
+            text = "Boa tarde"
+        } else {
+            text = " boa noite"
+        }
+        window.alert('ola' + text);
+
+
+    }
+</script>
+</body>
+</html>

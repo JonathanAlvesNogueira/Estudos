@@ -1,0 +1,95 @@
+document.write() = escreve o texto na tela;
+var = comando antigo para criação de variáveis;
+alert = cria uma janela de alerta na aba;
+/n = serve para quebrar a linha no alert e prompt;
+prompt() = Cria uma janel para digitar uma caixa de texto e passar para uma variavel;
+window.confirm() = cria uma janela para confirmar ou não uma opção retornando(true/false);
+&& = E dentro da estrutura IF;
+|| = OU dentro da estrutura IF;
+switch = comando que se assemelha ao escolha caso;
+case __: Comando usado dentro do switch semelhante ao caso do pseudocodigo;
+break = Comando utilizado dentro do caso para acabr a estrutura caso selecionada;
+var cor = []  - FORMA DE CRIAR ARRAY EM JAVASCRIPT;
+variavel.push() = puxa o item para a última posição do vetor;
+variavel.unshift() = puxa o item para a primeira posição do vetor;
+variavel.pop() = remove o item dentro da posição do vetor
+mochila.shift = elimina o primeiro elemento do vetor
+indexOf() retorna o primeiro índice em que o elemento pode ser encontrado no array, retorna -1 caso o mesmo não esteja presente. AULA 15
+.sort() = ordena os elementos do vetor
+.reverse() = reverte os elementos do vetor. se usar o sort + o reverse ordena o vetor na ordem contraria
+.join() = junta todos os elementos de um array (ou um array-like object) em uma string e retorna esta string
+length = retorn o numero do item
+Let  = usado para declarar uma variável que só vai existir no escopo onde foi declarada
+getElementsByTagName('p') = pega o elemento semantico do HTML 
+innerHTML = escreve dentro das semanticas no javascript
+querySelectorAll = pega qualquer semantica do HTML
+document.forms = capta o formulário
+.elements = comando que acessa os elementos do formulário
+new Date(); = puxa a data completa
+math.ceil = arredonda o valor para cima
+Math.floor(valor) = Arredonda para baixo
+Math.Round = arredond de acordo com a necessidade podendo ser para cima, ou para baixo
+Math.max = retorna o maior valor
+Math.min = retorna o menor valor
+This.variavel = se refere a variável global;
+Math.random = dá uma medida ou numero aleatorio entre os passados
+var hora = variavel.getHours
+.addEventListener("click", msg); = chama a função pelo proprio javascript, não pode ter ON na frente do evento.
+function(event) - usado quando quero obter lgo do evento;
+.keyCode = codigo da tecla pressionada
+Voltar na aula34
+setTimeout = permite executar um código após um tempo estipulado, que pode ser definido em milissegundos. 
+O setInterval = serve para executar uma função ou instrução várias vezes em um determinado intervalo de tempo. 
+O método window.requestAnimationFrame() fala para o navegador que deseja-se realizar uma animação e pede que o navegador chame uma função
+VOLTAR NA AULA 40;
+Voltar na aula 43,44;
+removeAttribute = remove um atributo de um elemento específico
+setAttribute() = Adiciona um novo atributo ou modifica o valor de um atributo existente num elemento específico;
+hasAttribute retorna um boolean, informando se um atributo existe no elemento;
+Voltar na Aula46 (Muita informção)
+match() é uma função embutida em JavaScript usada para pesquisar uma string para uma correspondência com qualquer expressão regular. Se a correspondência for encontrada, isso retornará a correspondência como uma matriz.
+O método search() aceita uma expressão regular e retorna o índice da primeira correspondência em uma string:
+O método replace() percorre toda a string em busca da sequência de caracteres a ser substituída. 
+O método charAt() retorna o caractere especificado a partir de uma string
+O método charCodeAt() - retorna um número inteiro entre 0 e 65535 que representa a letra digitada
+O método String.fromCharCode() retorna uma string criada ao usar uma sequência específica de valores Unicode
+O método concat() combina o texto de duas ou mais strings e retorna uma nova string.
+ O indexOf é utilizado para encontrar uma posição dentro de uma string ou array, caso o valor não seja encontrado, ele retorna -1.
+ LastIndexOf = retorna a ultima posição dentro do array, é a mesma estrutura do indexOf
+ localeCompare() retorna um número que indica se uma string de referência vem antes ou depois, ou é a mesma que a string fornecida na ordem de classificação
+ O método slice() retorna uma cópia de parte de um array a partir de um subarray criado entre as posições início e fim (fim não é necessário) de um array original
+ O método split() divide uma String em uma lista ordenada de substrings, coloca essas substrings em um array e retorna o array.
+ O substr() extrai caracteres de comprimento de uma str , contando a partir do índice inicial.
+ O método toLowerCase() retorna o valor da string que foi chamada convertido para minúsculo
+ O método toUpperCase() retorna o valor da string original convertido em letras maiúsculas
+ Voltr aula49
+ A propriedade innerWidth em JavaScript retorna a propriedade width e a propriedade innerHeight retorna a altura da área de conteúdo da janela.
+ window.screenX = retorna o valor da coordenada X (horizontal) da janela em relação à tela
+ Window.screenY = retorna o valor da coordenada Y (Vertical) da janela em relação à tela
+ Voltar aula65
+ voltar aula 67 
+ location.hash = 
+ location.host = 
+ location.href = 
+ location.origin = 
+ location.pathname= 
+ location.assign = 
+ location.replace = 
+ location.reload = 
+ typeof() = 
+ VOLTAR AULA 70 e 71;
+ apendchild = A função appendChild() insere um elemento filho (children) ao elemento pai (parent) na última posição, ela auxilia na criação de um elemento DOM
+ .createElement = A função createElement() irá criar um elemento HTML para ser, posteriormente, inserido em um documento HTML.
+ document.creatTextnode('') = função createTextNode() A função createTextNode cria um texto e auxilia na criação de um elemento DOM.
+ focus() = O método de foco JavaScript é usado para dar foco a um elemento html. Ele define o elemento como o elemento ativo no documento atual.
+ setAttributeNode = setAttribute() Adiciona um novo atributo ou modifica o valor de um atributo existente num elemento específico
+ createAttribute =  
+ removeAttribute = remove um atributo de um elemento específico.
+ .childNodes = é usada para retornar um Nodelist de nós filhos. Os itens Nodelist são objetos, não strings e podem ser acessados ​​usando números de índice.
+ insertBefore() = 
+ replaceChild = 
+ .parenteNode = mostra o pai daquele elemento HTML
+ .parenteNode.nodeName = mostra o que é de maneira direta
+ variavel.remove() = remove o parente
+ activeElement = 
+ requestAnimationFrame()

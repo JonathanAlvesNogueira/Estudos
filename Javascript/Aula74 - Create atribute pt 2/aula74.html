@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aula74</title>
+</head>
+<body>
+    
+    <input type="text"  id="fnum">
+    <button id="btn-verificar">Verificar</button>
+    <p>Javascript</p>
+    <p>PHP</p>
+    <p>Unit</p>
+    <p>HTML</p>
+    <p>CSSS</p>
+    <p>JAVA</p>
+
+
+    <script>
+
+        function inicia(){
+            document.getElementById('btn-verificar').addEventListener("click", function(){
+                var num = document.getElementById('fnum').value;
+                var p = document.getElementsByTagName("p");
+                for(i=0; i < p.length; i++){
+                    p[i].removeAttribute("style");
+                }
+                var at = document.createAttribute("style");
+                at.value="color: red;"
+                p[num].setAttributeNode(at) ;
+
+
+
+            })
+      
+        }
+
+
+        window.addEventListener("load", inicia)
+    </script>
+</body>
+</html>
